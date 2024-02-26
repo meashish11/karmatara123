@@ -38,11 +38,9 @@ header .main-nav li a {
 }
 
 .nav-top-button {
-    font-size: 20px;
-    padding: 5px;
-    border-radius: 6px;
-    background: white;
-    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Hero */
