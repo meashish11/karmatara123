@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Mulish, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #101010;
+}
+
+header .main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 10vw;
+}
+
+header .main-nav li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+header .main-nav li:first-child {
+    margin-right: auto;
+}
+
+header .main-nav li:last-child {
+    margin-left: auto;
+}
+
+header .main-nav li a {
+    user-select: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-top-button {
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero */
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2vw 10vw;
+    text-align: left;
+}
+
+.hero-left {
+    padding: 20px 20px;
+}
+
+.hero-left h1,
+h2 {
+    padding: 15px 0;
+}
+
+.hero-left button {
+    margin: 20px 0;
+    background: black;
+    color: white;
+}
+
+
+.hero-image-container {
+    position: relative;
+}
+
+.display-image {
+    width: 100%;
+}
+
+.display-image-name {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    background: #101010;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding: 5px 0;
+    width: 100%;
+}
+
+/* Project Showcase */
+
+.project-showcase {
+    padding: 1vw 10vw;
+}
+
+.projects-display-image {
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.project-showcase h2 {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.single-project {
+    text-align: left;
+    border-radius: 20px 20px 0 0;
+}
+
+.single-project h3 {
+    padding: 8px;
+    font-family: Roboto;
+    font-weight: 800;
+    height: auto;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #e0e0e0;
+    padding: 4px;
+    font-family: roboto;
+}
+
+.description {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.description-value {
+    width: 100%;
+    padding: 5px;
+}
+
+/* Message from CEO */
+
+.message_from_ceo {
+    padding: 5vw 10vw;
+}
+
+.message_from_ceo h2 {
+    text-align: center;
+    padding: 40px 20px
+}
+
+.message_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: auto;
+
+}
+
+.message_content .message {
+    width: fit-content;
+    text-align: justify;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 0vw 10vw;
+    background-color: #101010;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.copyright-text p {
+    border-top: 2px solid white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 600px;
+    z-index: 999;
+    background-color: black;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    padding: 20px 0 20px 20px;
+}
+
+.sidebar a {
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .menu-button {
+        display: block;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        padding: 5vw 10vw;
+        text-align: left;
+    }
+
+    .project-showcase {
+        padding: 1vw 10vw;
+        width: 100%;
+    }
+
+    .project-list {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px;
+    }
+
+    .message_content {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .message_content .message {
+        width: fit-content;
+        text-align: justify;
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+    }
+}
