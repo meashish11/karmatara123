@@ -68,12 +68,13 @@ header .main-nav li a {
 
 .hero-left {
     border-radius: 20px;
+    padding: 10px;
 }
 
-.hero-left h1,
-h2 {
-    padding: 10px;
-    color: black;
+h1,
+h2,
+h3 {
+    color: var(--blue);
 }
 
 .hero-left button {
